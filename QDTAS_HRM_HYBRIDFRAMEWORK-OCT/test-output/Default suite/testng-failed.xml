@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Utility.Listeners">
+      <class name="com.Utility.BaseClass">
         <methods>
           <include name="browserLaunch"/>
         </methods>
-      </class> <!-- com.Utility.Listeners -->
+      </class> <!-- com.Utility.BaseClass -->
       <class name="com.test.VerifyLoginPage">
         <methods>
           <include name="browserLaunch"/>
