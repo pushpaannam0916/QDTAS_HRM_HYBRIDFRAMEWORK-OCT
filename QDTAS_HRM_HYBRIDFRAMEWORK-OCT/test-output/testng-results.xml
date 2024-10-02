@@ -2,22 +2,22 @@
 <testng-results ignored="3" total="6" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-01T23:13:58 IST" name="Default suite" finished-at="2024-10-01T23:13:59 IST" duration-ms="99">
+  <suite started-at="2024-10-02T16:24:28 IST" name="Default suite" finished-at="2024-10-02T16:24:28 IST" duration-ms="97">
     <groups>
     </groups>
-    <test started-at="2024-10-01T23:13:58 IST" name="Default test" finished-at="2024-10-01T23:13:59 IST" duration-ms="99">
+    <test started-at="2024-10-02T16:24:28 IST" name="Default test" finished-at="2024-10-02T16:24:28 IST" duration-ms="97">
       <class name="com.Utility.BaseClass">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.Utility.BaseClass@14c01636]" started-at="2024-10-01T23:13:58 IST" name="browserLaunch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727804638991" status="FAIL">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.Utility.BaseClass@14c01636]" started-at="2024-10-02T16:24:28 IST" name="browserLaunch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1727866468339" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml]]>
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -47,17 +47,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- browserLaunch -->
       </class> <!-- com.Utility.BaseClass -->
       <class name="com.test.VerifyLoginPage">
-        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="VerifyLoginPage" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="VerifyLoginPage" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml]]>
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -85,21 +85,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginPage -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="FiledScreenshot" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="FiledScreenshot" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="test2" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="test2" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml]]>
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -127,21 +127,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="FiledScreenshot" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="FiledScreenshot" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="test3" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="test3" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml]]>
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse-2134625272\testng-customsuite.xml
+in C:\Users\sures\AppData\Local\Temp\testng-eclipse--480786432\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -169,7 +169,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-01T23:13:59 IST" name="FiledScreenshot" finished-at="2024-10-01T23:13:59 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@160ac7fb]" started-at="2024-10-02T16:24:28 IST" name="FiledScreenshot" finished-at="2024-10-02T16:24:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->

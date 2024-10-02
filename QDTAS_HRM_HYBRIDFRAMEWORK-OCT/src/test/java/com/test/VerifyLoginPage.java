@@ -19,7 +19,7 @@ public class VerifyLoginPage extends BaseClass{
 
 
 	@Test (priority=0)
-	public void VerifyLoginPage()throws IOException{  // 
+	public void VerifyLoginPage()throws IOException{  
 		
 		
 		HomePage_LoginPage hp_lp = new HomePage_LoginPage(driver);
