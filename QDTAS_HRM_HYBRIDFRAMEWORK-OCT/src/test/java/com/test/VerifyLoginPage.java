@@ -24,7 +24,7 @@ public class VerifyLoginPage extends BaseClass{
 		
 		HomePage_LoginPage hp_lp = new HomePage_LoginPage(driver);
 		
-		ExcelDataProvider edp = new ExcelDataProvider();   //
+		ExcelDataProvider edp = new ExcelDataProvider();   
 		edp.getdata();
 		
 		String user = edp.getStringData ("Sheet1",0,1);  

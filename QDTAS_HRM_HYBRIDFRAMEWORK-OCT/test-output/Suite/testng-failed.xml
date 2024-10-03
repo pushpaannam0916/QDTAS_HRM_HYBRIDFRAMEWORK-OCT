@@ -4,6 +4,20 @@
   <listeners>
     <listener class-name="com.Utility.Listeners"/>
   </listeners>
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.test.VerifyLoginPage">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="test3"/>
+          <include name="FiledScreenshot"/>
+          <include name="test2"/>
+          <include name="VerifyLoginPage"/>
+        </methods>
+      </class> <!-- com.test.VerifyLoginPage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
   <test thread-count="2" parallel="tests" name="Test(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
@@ -16,16 +30,4 @@
       </class> <!-- com.test.VerifyLoginPage -->
     </classes>
   </test> <!-- Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Test1(failed)">
-    <parameter name="Browser" value="firefox"/>
-    <classes>
-      <class name="com.test.VerifyLoginPage">
-        <methods>
-          <include name="browserLaunch"/>
-          <include name="FiledScreenshot"/>
-          <include name="VerifyLoginPage"/>
-        </methods>
-      </class> <!-- com.test.VerifyLoginPage -->
-    </classes>
-  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
