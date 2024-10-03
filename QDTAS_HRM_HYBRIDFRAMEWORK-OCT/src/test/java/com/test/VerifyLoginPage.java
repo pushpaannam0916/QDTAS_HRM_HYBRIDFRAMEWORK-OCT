@@ -19,12 +19,12 @@ public class VerifyLoginPage extends BaseClass{
 
 
 	@Test (priority=0)
-	public void VerifyLoginPage()throws IOException{  //
+	public void VerifyLoginPage()throws IOException{  
 		
 		
 		HomePage_LoginPage hp_lp = new HomePage_LoginPage(driver);
 		
-		ExcelDataProvider edp = new ExcelDataProvider();
+		ExcelDataProvider edp = new ExcelDataProvider();   //
 		edp.getdata();
 		
 		String user = edp.getStringData ("Sheet1",0,1);  
