@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="1" skipped="3">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T13:32:22 IST" name="Suite" finished-at="2024-10-03T13:32:48 IST" duration-ms="25425">
+  <suite started-at="2024-10-03T23:21:32 IST" name="Suite" finished-at="2024-10-03T23:21:43 IST" duration-ms="11139">
     <groups>
     </groups>
-    <test started-at="2024-10-03T13:32:22 IST" name="Test1" finished-at="2024-10-03T13:32:36 IST" duration-ms="13144">
+    <test started-at="2024-10-03T23:21:32 IST" name="Test1" finished-at="2024-10-03T23:21:40 IST" duration-ms="7701">
       <class name="com.test.VerifyLoginPage">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:22 IST" name="browserLaunch" finished-at="2024-10-03T13:32:35 IST" duration-ms="12979" status="FAIL">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:32 IST" name="browserLaunch" finished-at="2024-10-03T23:21:39 IST" duration-ms="6894" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -15,261 +15,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.Utility.BaseClass.browserLaunch(BaseClass.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:35 IST" name="VerifyLoginPage" finished-at="2024-10-03T13:32:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.Utility.BaseClass.browserLaunch(BaseClass.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLoginPage -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:36 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:36 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:36 IST" name="test2" finished-at="2024-10-03T13:32:36 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.Utility.BaseClass.browserLaunch(BaseClass.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:36 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:36 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:36 IST" name="test3" finished-at="2024-10-03T13:32:36 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'ANNAM', ip: '192.168.1.37'
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.Utility.BaseClass.browserLaunch(BaseClass.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@1bdaa23d]" started-at="2024-10-03T13:32:36 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:36 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FiledScreenshot -->
-      </class> <!-- com.test.VerifyLoginPage -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-10-03T13:32:22 IST" name="Test" finished-at="2024-10-03T13:32:48 IST" duration-ms="25425">
-      <class name="com.test.VerifyLoginPage">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:22 IST" name="browserLaunch" finished-at="2024-10-03T13:32:47 IST" duration-ms="24206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:47 IST" name="VerifyLoginPage" finished-at="2024-10-03T13:32:47 IST" duration-ms="430" status="FAIL">
+        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:39 IST" name="VerifyLoginPage" finished-at="2024-10-03T23:21:39 IST" duration-ms="83" status="FAIL">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
@@ -320,41 +69,136 @@ at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginPage -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:47 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:47 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:39 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:40 IST" duration-ms="300" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginPage status=FAILURE method=VerifyLoginPage.VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@733037] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLoginPage status=FAILURE method=VerifyLoginPage.VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:47 IST" name="test2" finished-at="2024-10-03T13:32:47 IST" duration-ms="3" status="PASS">
+        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:40 IST" name="test2" finished-at="2024-10-03T23:21:40 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:47 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:48 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:40 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:40 IST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=VerifyLoginPage.test2()[pri:1, instance:com.test.VerifyLoginPage@733037] output={null}]]]>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=VerifyLoginPage.test2()[pri:1, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:48 IST" name="test3" finished-at="2024-10-03T13:32:48 IST" duration-ms="5" status="PASS">
+        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:40 IST" name="test3" finished-at="2024-10-03T23:21:40 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@733037]" started-at="2024-10-03T13:32:48 IST" name="FiledScreenshot" finished-at="2024-10-03T13:32:48 IST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-03T23:21:40 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:40 IST" duration-ms="102" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test3 status=SUCCESS method=VerifyLoginPage.test3()[pri:2, instance:com.test.VerifyLoginPage@733037] output={null}]]]>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=VerifyLoginPage.test3()[pri:2, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiledScreenshot -->
+      </class> <!-- com.test.VerifyLoginPage -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-10-03T23:21:32 IST" name="Test" finished-at="2024-10-03T23:21:43 IST" duration-ms="11139">
+      <class name="com.test.VerifyLoginPage">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:32 IST" name="browserLaunch" finished-at="2024-10-03T23:21:42 IST" duration-ms="10213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:42 IST" name="VerifyLoginPage" finished-at="2024-10-03T23:21:42 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+at com.Utility.ExcelDataProvider.getdata(ExcelDataProvider.java:22)
+at com.test.VerifyLoginPage.VerifyLoginPage(VerifyLoginPage.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginPage -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:43 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:43 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginPage status=FAILURE method=VerifyLoginPage.VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiledScreenshot -->
+        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:43 IST" name="test2" finished-at="2024-10-03T23:21:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:43 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:43 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=VerifyLoginPage.test2()[pri:1, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiledScreenshot -->
+        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:43 IST" name="test3" finished-at="2024-10-03T23:21:43 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-03T23:21:43 IST" name="FiledScreenshot" finished-at="2024-10-03T23:21:43 IST" duration-ms="225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=VerifyLoginPage.test3()[pri:2, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
               </value>
             </param>
           </params>

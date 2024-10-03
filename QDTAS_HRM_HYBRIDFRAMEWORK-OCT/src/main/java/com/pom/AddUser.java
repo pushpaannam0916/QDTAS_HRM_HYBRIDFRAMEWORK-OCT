@@ -21,7 +21,7 @@ public class AddUser {
 	private WebElement MIDDLENAME;  //
 	
 	@FindBy(name="lastname")
-	private WebElement LASTNAME;
+	private WebElement LASTNAME; // //
 	
 	@FindBy(id="dob")
 	private WebElement DOB;

@@ -10,9 +10,7 @@
       <class name="com.test.VerifyLoginPage">
         <methods>
           <include name="browserLaunch"/>
-          <include name="test3"/>
           <include name="FiledScreenshot"/>
-          <include name="test2"/>
           <include name="VerifyLoginPage"/>
         </methods>
       </class> <!-- com.test.VerifyLoginPage -->
