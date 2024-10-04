@@ -61,6 +61,11 @@ public void  user(String user)
  	  SUBMIT.click();
 	   
     }
+
+	public void setEmail1(String email2) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 	//public void username(String user) {
