@@ -1,223 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="0" failed="0" skipped="4">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-04T21:52:02 IST" name="Default suite" finished-at="2024-10-04T21:52:03 IST" duration-ms="139">
+  <suite started-at="2024-10-07T13:03:10 IST" name="Suite" finished-at="2024-10-07T13:03:35 IST" duration-ms="25518">
     <groups>
     </groups>
-    <test started-at="2024-10-04T21:52:02 IST" name="Default test" finished-at="2024-10-04T21:52:03 IST" duration-ms="139">
+    <test started-at="2024-10-07T13:03:10 IST" name="Test1" finished-at="2024-10-07T13:03:35 IST" duration-ms="25517">
       <class name="com.test.VerifyLoginPage">
-        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="VerifyLoginPage" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:10 IST" name="browserLaunch" finished-at="2024-10-07T13:03:34 IST" duration-ms="23985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:34 IST" name="VerifyLoginPage" finished-at="2024-10-07T13:03:34 IST" duration-ms="260" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml]]>
+              <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+at com.Utility.ExcelDataProvider.getdata(ExcelDataProvider.java:22)
+at com.test.VerifyLoginPage.VerifyLoginPage(VerifyLoginPage.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginPage -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="FiledScreenshot" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:34 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginPage status=FAILURE method=VerifyLoginPage.VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="test2" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:35 IST" name="test2" finished-at="2024-10-07T13:03:35 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="FiledScreenshot" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:35 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=VerifyLoginPage.test2()[pri:1, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="test3" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:35 IST" name="test3" finished-at="2024-10-07T13:03:35 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@12f3afb5]" started-at="2024-10-04T21:52:03 IST" name="FiledScreenshot" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@4d4d8fcf]" started-at="2024-10-07T13:03:35 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=VerifyLoginPage.test3()[pri:2, instance:com.test.VerifyLoginPage@4d4d8fcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
       </class> <!-- com.test.VerifyLoginPage -->
-      <class name="com.Utility.Listeners">
-        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.Utility.Listeners@88d6f9b]" started-at="2024-10-04T21:52:02 IST" name="browserLaunch" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1728058922975" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-10-07T13:03:10 IST" name="Test" finished-at="2024-10-07T13:03:35 IST" duration-ms="25412">
+      <class name="com.test.VerifyLoginPage">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:10 IST" name="browserLaunch" finished-at="2024-10-07T13:03:34 IST" duration-ms="23928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-      </class> <!-- com.Utility.Listeners -->
-      <class name="com.test.TC_adduserTest_003">
-        <test-method signature="adduserTest()[pri:0, instance:com.test.TC_adduserTest_003@3fabf088]" started-at="2024-10-04T21:52:03 IST" name="adduserTest" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:34 IST" name="VerifyLoginPage" finished-at="2024-10-07T13:03:34 IST" duration-ms="239" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml]]>
+              <![CDATA[org/apache/poi/ss/usermodel/Workbook]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by BeforeTest on method browserLaunch but has not been marked @Optional or defined
-in C:\Users\sures\AppData\Local\Temp\testng-eclipse--985494510\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
-at org.testng.TestRunner.beforeRun(TestRunner.java:633)
-at org.testng.TestRunner.run(TestRunner.java:595)
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+at com.Utility.ExcelDataProvider.getdata(ExcelDataProvider.java:22)
+at com.test.VerifyLoginPage.VerifyLoginPage(VerifyLoginPage.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+... 24 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adduserTest -->
-        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.TC_adduserTest_003@3fabf088]" started-at="2024-10-04T21:52:03 IST" name="FiledScreenshot" finished-at="2024-10-04T21:52:03 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- VerifyLoginPage -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:34 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginPage status=FAILURE method=VerifyLoginPage.VerifyLoginPage()[pri:0, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiledScreenshot -->
-      </class> <!-- com.test.TC_adduserTest_003 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="test2()[pri:1, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:35 IST" name="test2" finished-at="2024-10-07T13:03:35 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:35 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=VerifyLoginPage.test2()[pri:1, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiledScreenshot -->
+        <test-method signature="test3()[pri:2, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:35 IST" name="test3" finished-at="2024-10-07T13:03:35 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="FiledScreenshot(org.testng.ITestResult)[pri:0, instance:com.test.VerifyLoginPage@5851bd4f]" started-at="2024-10-07T13:03:35 IST" name="FiledScreenshot" finished-at="2024-10-07T13:03:35 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=VerifyLoginPage.test3()[pri:2, instance:com.test.VerifyLoginPage@5851bd4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiledScreenshot -->
+      </class> <!-- com.test.VerifyLoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
